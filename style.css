@@ -9,7 +9,7 @@ html, body {
 }
 
 body {
-    background-color: #283033;
+    background-color: #9EC4B344;
     display: flex;
     justify-content: center;
     font-family: 'Press Start 2P', cursive;
@@ -22,6 +22,7 @@ main {
     flex-direction: column;
     align-items: center;
     padding: 1em .5em;
+    border-radius: 5px;
 }
 
 .pager {
