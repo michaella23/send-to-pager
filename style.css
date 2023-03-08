@@ -80,6 +80,11 @@ h2 {
     padding: .5em 1em;
     background-color: #F8F8F8;
     color: #283033;
+    font-family: inherit;
+}
+
+.small-key {
+    border: none;
 }
 
 .key:hover, .key:focus {

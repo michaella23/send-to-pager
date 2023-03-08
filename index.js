@@ -1,17 +1,14 @@
-// create array with keys
-// use forEach to 
-// - create element (button)
-// - append to keypad
-// - give it text content
+const keypad = document.querySelector('.keypad');
 
-// const keypad = document.querySelector('keypad');
+const keys = document.querySelectorAll('.key')
 
-// const keys = [
-//     '1', '2', '3', '4', '5', '6', '7', '8', '9', '*', '0', '#', 'RESET', 'SEND'
-// ]
+const phoneDisplay = document.querySelector(".phone-display")
+const pagerDisplay = document.querySelector(".pager-display")
 
-// keys.forEach(key => {
-//     const buttonEl = document.createElement('button');
-//     buttonEl.textContent = key;
-//     keypad.append(buttonEl);
-// })
+keys.forEach(key => {
+    key.addEventListener('click', () => handleClick(key.id));
+})
+
+function handleClick(id) {
+    phoneDisplay.textContent += id;
+};
