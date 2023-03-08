@@ -14,9 +14,11 @@ function handleClick(id) {
         pagerDisplay.textContent = "";
         phoneDisplay.textContent = "";
     } else if (id === "send") {
-        phoneDisplay.textContent = "";
-        pagerDisplay.textContent = number;
-        youWerePaged();
+        setTimeout(() => {
+            phoneDisplay.textContent = "";
+            pagerDisplay.textContent = number;
+            youWerePaged();  
+        }, 2000) 
     } else {
         phoneDisplay.textContent += id;
     }
